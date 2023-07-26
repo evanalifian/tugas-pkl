@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+p {
+  font-size: 17px;
+  line-height: 28px;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+
+.visi-misi, .tujuan, .alur {
+  padding-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar > .container {
+  flex-direction: row;
+}
+
+.navbar .navbar-brand {
+  color: darkslateblue;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .navbar-list {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar .navbar-list a {
+  color: inherit;
+  font-weight: 600;
+  color: inherit;
+}
+/* Akhir Navbar */
+
+
+/* Header */
+.header {
+  height: 100vh;
+}
+
+.header > .container {
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+header h3 {
+  color: darkslateblue;
+}
+
+header h1 {
+  font-size: 60px;
+}
+
+header .request-button {
+  margin-top: 2rem;
+}
+
+header .request-button a {
+  padding: 15px 20px;
+  border: 3px solid darkslateblue;
+  border-radius: 16px;
+  font-size: 18px;
+  color: darkslateblue;
+}
+
+header .request-button a:first-child {
+  background-color: darkslateblue;
+  color: whitesmoke;
+  margin-right: 20px;
+}
+/* Akhir Header */
+
+
+
+/* Bagian Visi Misi */
+.visi-misi .section-body {
+  display: flex;
+  gap: 100px;
+}
+
+.visi-misi .section-body .section-visi, .visi-misi .section-body .section-misi {
+  flex: 1;
+}
+
+.visi-misi .section-body .section-misi ol {
+  margin-left: 30px;
+}
+/* Akhir Bagian Visi Misi */
+
+
+
+/* Bagian Tujuan */
+.tujuan p {
+  text-align: center;
+}
+/* Akhir Bagian Tujuan */
+
+
+
+/* Bagian Alur Prakerin */
+.alur p {
+  margin-bottom: 30px;
+}
+
+.alur ul li {
+  list-style: none;
+  border-left: 5px solid darkslateblue;
+  padding: 10px 0 40px 20px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.alur ul li::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: darkslateblue;
+  position: absolute;
+  left: -10px;
+  bottom: 0;
+}
+/* Akhir Bagian Alur Prakerin */
+
+
+
+/* Footer */
+footer {
+  background-color: rgb(13, 8, 49);
+  color: whitesmoke;
+  padding: 3rem 0;
+}
+
+footer .social-media {
+  display: flex;
+  font-size: 25px;
+  gap: 20px;
+}
+
+footer .social-media li {
+  list-style: none;
+}
+
+footer .social-media li a {
+  color: inherit;
+}
+/* Akhir Footer */
