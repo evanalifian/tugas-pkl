@@ -20,7 +20,15 @@ html {
   gap: 2rem;
 }
 
-p {
+h1 {
+  font-size: 46px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.contact form .form-field input, .contact form .form-field textarea, p {
   font-size: 17px;
   line-height: 28px;
 }
@@ -34,10 +42,32 @@ h2 {
 }
 
 
-.visi-misi, .tujuan, .alur {
+.visi-misi, .tujuan, .alur, .contact {
   padding-top: 6rem;
   margin-bottom: 6rem;
 }
+
+.section-body {
+  display: flex;
+  gap: 100px;
+}
+
+header .request-button a, .contact form button {
+  padding: 15px 20px;
+  border: 3px solid darkslateblue;
+  border-radius: 16px;
+  font-size: 18px;
+  color: darkslateblue;
+}
+
+header .request-button a:first-child, .contact form button {
+  background-color: darkslateblue;
+  color: whitesmoke;
+  margin-right: 20px;
+}
+
+
+
 
 /* Navbar */
 .navbar {
@@ -51,6 +81,7 @@ h2 {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 1;
 }
 
 .navbar > .container {
@@ -99,30 +130,11 @@ header h1 {
 header .request-button {
   margin-top: 2rem;
 }
-
-header .request-button a {
-  padding: 15px 20px;
-  border: 3px solid darkslateblue;
-  border-radius: 16px;
-  font-size: 18px;
-  color: darkslateblue;
-}
-
-header .request-button a:first-child {
-  background-color: darkslateblue;
-  color: whitesmoke;
-  margin-right: 20px;
-}
 /* Akhir Header */
 
 
 
 /* Bagian Visi Misi */
-.visi-misi .section-body {
-  display: flex;
-  gap: 100px;
-}
-
 .visi-misi .section-body .section-visi, .visi-misi .section-body .section-misi {
   flex: 1;
 }
@@ -143,8 +155,9 @@ header .request-button a:first-child {
 
 
 /* Bagian Alur Prakerin */
-.alur p {
-  margin-bottom: 30px;
+.alur .section-body {
+  flex-direction: column;
+  gap: 50px;
 }
 
 .alur ul li {
@@ -170,11 +183,48 @@ header .request-button a:first-child {
 
 
 
+/* Bagian Contact */
+.contact form {
+  width: 500px;
+}
+
+.contact form .form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.contact form .form-field input, .contact form .form-field textarea {
+  padding: 10px;
+  border-radius: 16px;
+  border: 4px solid darkslateblue;
+  transition: .1s;
+}
+
+.contact form .form-field input:focus, .contact form .form-field textarea:focus {
+  outline: 4px solid rgb(107, 98, 168);
+}
+
+.contact form .form-field textarea {
+  resize: unset;
+}
+/* Akhir Bagian Contact */
+
+
+
 /* Footer */
 footer {
   background-color: rgb(13, 8, 49);
   color: whitesmoke;
   padding: 3rem 0;
+}
+
+footer .section-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 
 footer .social-media {
